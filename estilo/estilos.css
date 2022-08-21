@@ -29,6 +29,7 @@ a{
     width: 60%;
 }
 .navLista{
+    font-family: 'Raleway', sans-serif;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -84,8 +85,8 @@ a{
     margin: 20px 0;
 }
 .cuadro{
-    width: 300px;
-    height: 450px;
+    width: 327px;
+    height: 458px;
     /*border: solid 1px;*/
     margin: 20px;
 }
@@ -97,11 +98,13 @@ a{
     box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 65%);
 }
 .imagen{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 .cuerpo{
     padding: 10px 10px 10px 25px;
+    font-family: 'Raleway', sans-serif;
 }
 .section2{
     display: flex;
@@ -116,6 +119,9 @@ a{
     flex-wrap: wrap;
     margin: 20px 0;
 }
+
+
+
 /*                                               aqui termina estilos de index                         */
 
 
@@ -295,10 +301,14 @@ button.btn2:hover:before {
 }
 
 .cuadroGaleria{
-    width: 300px;
+    width: 310px;
+    height: 860px;
+    border: solid 1px;
+    margin: 10px;
+    /*width: 300px;
     height: 600px;
     border: solid 1px;
-    margin: 20px;
+    margin: 20px;*/
 }
 .cuadroGaleria:hover{
     box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 40%);
@@ -308,10 +318,12 @@ button.btn2:hover:before {
     width: 100%;
 }
 .imagenGaleria{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 .cuerpoGaleria{
+    font-family: 'Cairo', sans-serif;
     padding: 10px 10px 10px 25px;
     font-size: 15px;
 }
@@ -331,10 +343,10 @@ button.btn2:hover:before {
     margin: 20px 0;
 }
 .cuadro1About{
-    width: 300px;
-    height: 450px;
+    width: 320px;
+    height: 345px;
     /*border: solid 1px;*/
-    margin: 20px;
+    margin: 10px;
 }
 .imagenCuadro1About{
     height: 100%;
@@ -348,7 +360,9 @@ button.btn2:hover:before {
     width: 100%;
 }
 .cuerpo1About{
-    padding: 10px 10px 10px 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    padding: 10px 10px 20px 25px;
 }
 .section2About{
     display: flex;
@@ -358,10 +372,10 @@ button.btn2:hover:before {
 }
 
 .cuadro2About{
-    width: 300px;
-    height: 600px;
+    width: 305px;
+    height: 690px;
     border: solid 1px;
-    margin: 20px;
+    margin: 5px;
 }
 .cuadro2About:hover{
     box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 40%);
@@ -371,12 +385,16 @@ button.btn2:hover:before {
     width: 100%;
 }
 .imagen2About{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 .cuerpo2About{
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 10px 10px 10px 25px;
 }
+
+
 /*                             aqui finaliza estilos de la pagina about           */
 
 .section1Servicios{
@@ -400,10 +418,12 @@ button.btn2:hover:before {
     width: 100%;
 }
 .imagen1Servicios{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 .cuerpo1Servicios{
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 10px 10px 10px 25px;
     font-size: 15px;
 }
@@ -431,10 +451,31 @@ button.btn2:hover:before {
     width: 100%;
 }
 .cuerpo2Servicios{
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 10px 10px 10px 25px;
 }
 h3.titulo2Servicios{
     margin-top: -6px;
 }
 
+
 /*                         aqui finaliza estilos de servicios            */
+
+@media (max-width:900px){
+    .cajaNav{
+        display: block;
+    }
+    .navLista{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 310px;
+    }    
+    .iconos{
+        width: 50%;
+    }
+}
